@@ -2,6 +2,15 @@
     "name": "tailwind-dreams",
     "displayName": "Tailwind Dreams",
     "description": "Dark color theme based on the Tailwind CSS color palette",
+    "publisher": "dreamscape-visionery-llc",
+    "author": {
+        "name": "Chris Van Cleve"
+    },
+    "icon": "images/icon.png",
+    "galleryBanner": {
+        "color": "#3b82f6",
+        "theme": "dark"
+    },
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.65.0"
@@ -17,5 +26,15 @@
                 "path": "./themes/Tailwind-Dreams-color-theme.json"
             }
         ]
-    }
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/AmazingVanish/tailwind-dreams/issues",
+        "email": "chris.vancleve@dscape-llc.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AmazingVanish/tailwind-dreams.git"
+    },
+    "homepage": "https://github.com/AmazingVanish/tailwind-dreams/blob/main/README.md"
 }
