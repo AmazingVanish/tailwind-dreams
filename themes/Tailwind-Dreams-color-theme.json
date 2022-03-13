@@ -75,7 +75,7 @@
         "editorWarning.foreground": "#fb923c",
         "editorWhitespace.foreground": "#374151",
         "editorWidget.background": "#0f172a",
-		"editorWidget.border" "#2563eb",
+        "editorWidget.border": "#2563eb",
         "errorForeground": "#dc2626",
         "focusBorder": "#a855f7",
         "foreground": "#cbd5e1",
