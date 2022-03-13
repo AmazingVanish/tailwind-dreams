@@ -1,0 +1,21 @@
+{
+    "name": "tailwind-dreams",
+    "displayName": "Tailwind Dreams",
+    "description": "Dark color theme based on the Tailwind CSS color palette",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.65.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Tailwind Dreams",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Tailwind-Dreams-color-theme.json"
+            }
+        ]
+    }
+}
