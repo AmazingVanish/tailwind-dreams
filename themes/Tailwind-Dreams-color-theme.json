@@ -444,32 +444,28 @@
             "name": "markup diff",
             "scope": "markup.changed.diff",
             "settings": {
-                "foreground": "#fdba74",
-                "fontStyle": "italic"
+                "foreground": "#fdba74"
             }
         },
         {
             "name": "diff",
             "scope": "meta.diff.header.from-file,meta.diff.header.to-file,punctuation.definition.from-file.diff,punctuation.definition.to-file.diff",
             "settings": {
-                "foreground": "#2563eb",
-                "fontStyle": "italic"
+                "foreground": "#2563eb"
             }
         },
         {
             "name": "inserted.diff",
             "scope": "markup.inserted.diff",
             "settings": {
-                "foreground": "#22c55e",
-                "fontStyle": "italic"
+                "foreground": "#22c55e"
             }
         },
         {
             "name": "deleted.diff",
             "scope": "markup.deleted.diff",
             "settings": {
-                "foreground": "#f87171",
-                "fontStyle": "italic"
+                "foreground": "#f87171"
             }
         },
         {
@@ -695,8 +691,7 @@
             "name": "js console function",
             "scope": "entity.name.function,support.function.console",
             "settings": {
-                "foreground": "#2563eb",
-                "fontStyle": "italic"
+                "foreground": "#2563eb"
             }
         },
         {
@@ -738,8 +733,7 @@
             "name": "keyword.operator",
             "scope": "keyword.operator.arithmetic,keyword.operator.comparison,keyword.operator.decrement,keyword.operator.increment,keyword.operator.relational",
             "settings": {
-                "foreground": "#06b6d4",
-                "fontStyle": "italic"
+                "foreground": "#06b6d4"
             }
         },
         {
@@ -747,14 +741,6 @@
             "scope": "keyword.operator.assignment.c,keyword.operator.comparison.c,keyword.operator.c,keyword.operator.increment.c,keyword.operator.decrement.c,keyword.operator.bitwise.shift.c,keyword.operator.assignment.cpp,keyword.operator.comparison.cpp,keyword.operator.cpp,keyword.operator.increment.cpp,keyword.operator.decrement.cpp,keyword.operator.bitwise.shift.cpp",
             "settings": {
                 "foreground": "#a78bfa"
-            }
-        },
-        {
-            "name": "Meta Delimiter Period",
-            "scope": "meta.delimiter.period",
-            "settings": {
-                "foreground": "#a78bfa",
-                "fontStyle": "italic"
             }
         },
         {
@@ -857,10 +843,9 @@
         },
         {
             "name": "Keywords",
-            "scope": ["punctuation.accessor", "keyword"],
+            "scope": "keyword",
             "settings": {
-                "foreground": "#a78bfa",
-                "fontStyle": "italic"
+                "foreground": "#a78bfa"
             }
         },
         {
@@ -942,7 +927,8 @@
             "name": "Classes",
             "scope": "support.class, entity.name.type.class",
             "settings": {
-                "foreground": "#fdba74"
+                "foreground": "#fdba74",
+                "fontStyle": "underline"
             }
         },
         {
@@ -979,35 +965,9 @@
         },
         {
             "name": "Keyword Control",
-            "scope": [
-                "keyword.control",
-                "keyword.control.flow.js",
-                "keyword.control.flow.ts",
-                "keyword.control.flow.tsx",
-                "keyword.control.ruby",
-                "keyword.control.module.ruby",
-                "keyword.control.class.ruby",
-                "keyword.control.def.ruby",
-                "keyword.control.loop.js",
-                "keyword.control.loop.ts",
-                "keyword.control.import.js",
-                "keyword.control.import.ts",
-                "keyword.control.import.tsx",
-                "keyword.control.from.js",
-                "keyword.control.from.ts",
-                "keyword.control.from.tsx"
-            ],
+            "scope": "keyword.control",
             "settings": {
-                "foreground": "#a78bfa",
-                "fontStyle": "italic"
-            }
-        },
-        {
-            "name": "Italics",
-            "scope": "italic",
-            "settings": {
-                "foreground": "#a78bfa",
-                "fontStyle": "italic"
+                "foreground": "#a78bfa"
             }
         },
         {
@@ -1026,17 +986,9 @@
         },
         {
             "name": "Storage",
-            "scope": [
-                "storage",
-                "meta.var.expr",
-                "meta.class meta.method.declaration meta.var.expr storage.type.js",
-                "storage.type.property.js",
-                "storage.type.property.ts",
-                "storage.type.property.tsx"
-            ],
+            "scope": "storage",
             "settings": {
-                "foreground": "#a78bfa",
-                "fontStyle": "italic"
+                "foreground": "#a78bfa"
             }
         },
         {
@@ -1162,8 +1114,7 @@
             "name": "Selector",
             "scope": "meta.selector",
             "settings": {
-                "foreground": "#a78bfa",
-                "fontStyle": "italic"
+                "foreground": "#a78bfa"
             }
         },
         {
@@ -1207,7 +1158,8 @@
             "name": "markup Italic",
             "scope": "markup.italic, punctuation.definition.italic,todo.emphasis",
             "settings": {
-                "foreground": "#a78bfa"
+                "foreground": "#a78bfa",
+                "fontStyle": "italic"
             }
         },
         {
@@ -1726,14 +1678,6 @@
             }
         },
         {
-            "name": "Doctypes",
-            "scope": ["entity.name.tag.doctype", "meta.tag.sgml.doctype"],
-            "settings": {
-                "foreground": "#a78bfa",
-                "fontStyle": "italic"
-            }
-        },
-        {
             "name": "js Flowtype",
             "scope": ["support.type.type.flowtype"],
             "settings": {
@@ -2097,8 +2041,7 @@
             "name": "Comments",
             "scope": "comment, punctuation.definition.comment",
             "settings": {
-                "foreground": "#7f848e",
-                "fontStyle": "italic"
+                "foreground": "#7f848e"
             }
         },
         {
@@ -2178,8 +2121,7 @@
             "name": "variable.other.object",
             "scope": ["variable.other.object"],
             "settings": {
-                "foreground": "#fdba74",
-                "fontStyle": "italic"
+                "foreground": "#fdba74"
             }
         },
         {
@@ -2233,6 +2175,25 @@
             "scope": ["string.regexp"],
             "settings": {
                 "foreground": "#f87171"
+            }
+        },
+        {
+            "name": "Cursive Italic Font",
+            "scope": [
+                "modifier",
+                "this",
+                "comment",
+                "storage.modifier.js",
+                "storage.modifier.ts",
+                "storage.modifier.tsx",
+                "entity.other.attribute-name.js",
+                "entity.other.attribute-name.ts",
+                "entity.other.attribute-name.tsx",
+                "entity.other.attribute-name.html",
+                "keyword.control.flow.js"
+            ],
+            "settings": {
+                "fontStyle": "italic"
             }
         }
     ]
