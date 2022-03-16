@@ -316,9 +316,37 @@
     },
     "tokenColors": [
         {
+            "name": "Meta Delimiter Period",
+            "scope": "meta.delimiter.period",
+            "settings": {
+                "foreground": "#a78bfa",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Meta Selector",
+            "scope": "meta.selector",
+            "settings": {
+                "foreground": "#a78bfa",
+                "fontStyle": "italic"
+            }
+        },
+        {
             "scope": "meta.embedded",
             "settings": {
                 "foreground": "#94a3b8"
+            }
+        },
+        {
+            "name": "Doctypes",
+            "scope": [
+                "entity.name.tag.doctype",
+                "meta.tag.sgml.doctype",
+                "meta.tag.sgml.doctype.html"
+            ],
+            "settings": {
+                "foreground": "#a78bfa",
+                "fontStyle": "italic"
             }
         },
         {
@@ -434,17 +462,25 @@
             }
         },
         {
-            "name": "Comment Markup Link",
-            "scope": "comment markup.link",
+            "name": "Changed",
+            "scope": [
+                "markup.changed",
+                "markup.changed.diff",
+                "meta.diff.header.git",
+                "meta.diff.header.from-file",
+                "meta.diff.header.to-file"
+            ],
             "settings": {
-                "foreground": "#64748b"
+                "foreground": "#fdba74",
+                "fontStyle": "italic"
             }
         },
         {
-            "name": "markup diff",
-            "scope": "markup.changed.diff",
+            "name": "Comment Markup Link",
+            "scope": "comment markup.link",
             "settings": {
-                "foreground": "#fdba74"
+                "foreground": "#64748b",
+                "fontStyle": "italic"
             }
         },
         {
@@ -458,14 +494,16 @@
             "name": "inserted.diff",
             "scope": "markup.inserted.diff",
             "settings": {
-                "foreground": "#22c55e"
+                "foreground": "#22c55e",
+                "fontStyle": "italic"
             }
         },
         {
             "name": "deleted.diff",
             "scope": "markup.deleted.diff",
             "settings": {
-                "foreground": "#f87171"
+                "foreground": "#f87171",
+                "fontStyle": "italic"
             }
         },
         {
@@ -691,7 +729,8 @@
             "name": "js console function",
             "scope": "entity.name.function,support.function.console",
             "settings": {
-                "foreground": "#2563eb"
+                "foreground": "#2563eb",
+                "fontStyle": "italic"
             }
         },
         {
@@ -733,7 +772,36 @@
             "name": "keyword.operator",
             "scope": "keyword.operator.arithmetic,keyword.operator.comparison,keyword.operator.decrement,keyword.operator.increment,keyword.operator.relational",
             "settings": {
-                "foreground": "#06b6d4"
+                "foreground": "#06b6d4",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Keyword Operator Comparison, imports, returns and Keyword Operator Ruby",
+            "scope": [
+                "keyword.operator.comparison",
+                "keyword.control.flow.js",
+                "keyword.control.flow.ts",
+                "keyword.control.flow.tsx",
+                "keyword.control.ruby",
+                "keyword.control.module.ruby",
+                "keyword.control.class.ruby",
+                "keyword.control.def.ruby",
+                "keyword.control.loop.js",
+                "keyword.control.loop.ts",
+                "keyword.control.import.js",
+                "keyword.control.import.ts",
+                "keyword.control.import.tsx",
+                "keyword.control.from.js",
+                "keyword.control.from.ts",
+                "keyword.control.from.tsx",
+                "keyword.operator.instanceof.js",
+                "keyword.operator.expression.instanceof.ts",
+                "keyword.operator.expression.instanceof.tsx"
+            ],
+            "settings": {
+                "foreground": "#a78bfa",
+                "fontStyle": "italic"
             }
         },
         {
@@ -843,9 +911,10 @@
         },
         {
             "name": "Keywords",
-            "scope": "keyword",
+            "scope": ["punctuation.accessor", "keyword"],
             "settings": {
-                "foreground": "#a78bfa"
+                "foreground": "#a78bfa",
+                "fontStyle": "italic"
             }
         },
         {
@@ -913,7 +982,8 @@
                 "variable.function"
             ],
             "settings": {
-                "foreground": "#2563eb"
+                "foreground": "#2563eb",
+                "fontStyle": "italic"
             }
         },
         {
@@ -967,7 +1037,8 @@
             "name": "Keyword Control",
             "scope": "keyword.control",
             "settings": {
-                "foreground": "#a78bfa"
+                "foreground": "#a78bfa",
+                "fontStyle": "italic"
             }
         },
         {
@@ -986,9 +1057,17 @@
         },
         {
             "name": "Storage",
-            "scope": "storage",
+            "scope": [
+                "storage",
+                "meta.var.expr",
+                "meta.class meta.method.declaration meta.var.expr storage.type.js",
+                "storage.type.property.js",
+                "storage.type.property.ts",
+                "storage.type.property.tsx"
+            ],
             "settings": {
-                "foreground": "#a78bfa"
+                "foreground": "#a78bfa",
+                "fontStyle": "italic"
             }
         },
         {
@@ -1155,6 +1234,14 @@
             }
         },
         {
+            "name": "Italics",
+            "scope": "italic",
+            "settings": {
+                "foreground": "#a78bfa",
+                "fontStyle": "italic"
+            }
+        },
+        {
             "name": "markup Italic",
             "scope": "markup.italic, punctuation.definition.italic,todo.emphasis",
             "settings": {
@@ -1163,10 +1250,43 @@
             }
         },
         {
+            "name": "Markdown Italics",
+            "scope": "markup.italic.markdown",
+            "settings": {
+                "foreground": "#a78bfa",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Markdown Bold",
+            "scope": "markup.bold.markdown",
+            "settings": {
+                "foreground": "#fdba74",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Markdown Quote + others",
+            "scope": "markup.quote.markdown",
+            "settings": {
+                "foreground": "#94a3b8",
+                "fontStyle": "italic"
+            }
+        },
+
+        {
             "name": "emphasis md",
             "scope": "emphasis md",
             "settings": {
                 "foreground": "#a78bfa"
+            }
+        },
+        {
+            "name": "Quote",
+            "scope": "quote",
+            "settings": {
+                "foreground": "#94a3b8",
+                "fontStyle": "italic"
             }
         },
         {
@@ -1970,7 +2090,8 @@
             "name": "comments",
             "scope": ["beginning.punctuation.definition.list.markdown.xi"],
             "settings": {
-                "foreground": "#7f848e"
+                "foreground": "#7f848e",
+                "fontStyle": "italic"
             }
         },
         {
@@ -2041,7 +2162,8 @@
             "name": "Comments",
             "scope": "comment, punctuation.definition.comment",
             "settings": {
-                "foreground": "#7f848e"
+                "foreground": "#7f848e",
+                "fontStyle": "italic"
             }
         },
         {
@@ -2059,6 +2181,7 @@
             }
         },
         {
+            "name": "Elixir Symbols",
             "scope": [
                 "constant.language.symbol.elixir",
                 "constant.language.symbol.double-quoted.elixir"
@@ -2067,6 +2190,15 @@
                 "foreground": "#06b6d4"
             }
         },
+        {
+            "name": "Elixir Binary Punctuations",
+            "scope": "source.elixir .punctuation.binary.elixir",
+            "settings": {
+                "foreground": "#a78bfa",
+                "fontStyle": "italic"
+            }
+        },
+
         {
             "scope": ["entity.name.variable.parameter.cs"],
             "settings": {
@@ -2119,9 +2251,14 @@
         },
         {
             "name": "variable.other.object",
-            "scope": ["variable.other.object"],
+            "scope": [
+                "variable.other.object",
+                "variable.other.object.property",
+                "variable.other.object.js"
+            ],
             "settings": {
-                "foreground": "#fdba74"
+                "foreground": "#fdba74",
+                "fontStyle": "italic"
             }
         },
         {
@@ -2178,21 +2315,22 @@
             }
         },
         {
-            "name": "Cursive Italic Font",
+            "name": "Go Keywords",
             "scope": [
-                "modifier",
-                "this",
-                "comment",
-                "storage.modifier.js",
-                "storage.modifier.ts",
-                "storage.modifier.tsx",
-                "entity.other.attribute-name.js",
-                "entity.other.attribute-name.ts",
-                "entity.other.attribute-name.tsx",
-                "entity.other.attribute-name.html",
-                "keyword.control.flow.js"
+                "source.go keyword.package.go",
+                "source.go keyword.import.go",
+                "source.go keyword.function.go",
+                "source.go keyword.type.go",
+                "source.go keyword.struct.go",
+                "source.go keyword.interface.go",
+                "source.go keyword.const.go",
+                "source.go keyword.var.go",
+                "source.go keyword.map.go",
+                "source.go keyword.channel.go",
+                "source.go keyword.control.go"
             ],
             "settings": {
+                "foreground": "#a78bfa",
                 "fontStyle": "italic"
             }
         }
